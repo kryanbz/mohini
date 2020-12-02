@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<style>
+img {
+  float: right;
+}
+.button {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+
+<h3>A Demostration how Cache Memory works. </h3>
+
+
+<p>
+<img id="MLinstrucitons" src="" >
+
+<button class="button" onclick="document.getElementById('MLinstrucitons').src='cachedef.png'">Cache Definition</button><br>
+<button class="button" onclick="document.getElementById('MLinstrucitons').src='l1cachedef.jpg'; document.getElementById('Englishinstrucitons').src='singlecache.jpg'">L1 Cache</button><br>
+<button class="button" onclick="document.getElementById('MLinstrucitons').src='l2cachedef.jpg'; document.getElementById('Englishinstrucitons').src='l2 cache.jpg'">L2 Cache</button><br>
+<button class="button" onclick="document.getElementById('MLinstrucitons').src='l3cachedef.jpg'; document.getElementById('Englishinstrucitons').src='threelevelcache.jpg'">L3 Cache</button><br>
+
+<img id="Englishinstrucitons" src="">
+
+<img id="MLinstrucitons" src="" >
+
+<button class="button" onclick="document.getElementById('MLinstrucitons').src='latency.jpg'">Latency and Size Increase</button><br>
+<button class="button" onclick="document.getElementById('MLinstrucitons').src='bandwidth.jpg'">Bandwidth Increase</button><br>
+
+
+
+
+</p>
+
+
+<a href="fidelproject.html">Next</a>
+
+<a href="project.html">Back to Projects</a>
+
+
+</body>
+</html>

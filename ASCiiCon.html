@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>ASCII Converter</title>
+	</head>
+	<style media="screen">
+		body{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-family: Century Gothic;
+			background-image : url("backgroung.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 100vh;
+		}
+		div{
+			width: 500px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background-color: white;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 1px 1px 20px #717D7E;
+		}
+		h2{
+			font-size: 30px;
+			font-weight: 600;
+			color : blue;
+		}
+		.text{
+			text-align: left;
+			margin-left: 150px;
+			color : black;
+		}
+		#w, #h{
+			color: #717D7E;
+			text-align: left;
+			font-size: 20px;
+			font-weight: 200;
+			outline: none;
+			border: none;
+			background: none;
+			border-bottom: 1px solid black;
+			width: 200px;
+		}
+			#w:focus, #h:focus{
+				border-bottom: 2px solid grey;
+				width: 300px;
+				transition: 0.5s;
+			}
+			#result{
+				color: #BA4A00;
+				font-size 100px;
+				font-weight: bolder;
+			}
+			#btn{
+				font-family: Century Gothic;
+				margin-top: 10px;
+				border: none;
+				color: #fff;
+				background-color: black;
+				width: 150px;
+				padding: 10px;
+				border-radius: 30px;
+				outline: none;
+				cursor: pointer;
+			}
+			#btn:hover{
+				box-shadow: 1px 1px 10px #341f97;
+			}
+			#info{
+				font-size: 12px;
+				font-family: inherit;
+				font-weight: bold;
+				color : black;
+			}
+	</style>
+	<script type="text/javascript">
+		function DecToAscii() {
+			var h=document.getElementById('h').value;
+			var result=String.fromCharCode(h);
+			document.getElementById("result").innerHTML= result;
+			console.log(result);
+
+			
+		}
+		
+
+	</script>
+	<body>
+		<div>
+			<h2>ASCII Converter</h2>
+			<p class="text">Number:</p>
+			<input type="text" id="h">
+			<p id="result"></p>
+			<button id="btn" onClick="DecToAscii()">Enter</button>
+			<p id="info">Enter any number from 0 - 127 to convert.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+
+  <h2>Converter: Binary to base 10</h2>
+<p> An example of how it works</p>
+<img id="myImage" src="git_binary1.jpg" style="width:300px">
+<p>Enter any number in base 2(1,0):</p>
+<p><input type="number" id="inputBin" value=""></p>
+
+
+<button onclick="binToDec()">Submit</button>
+
+<p>Base 10: </p>
+<p id="demo"></p>
+
+<script>
+function binToDec() {
+  var x = document.getElementById("inputBin").value;
+  var decOut = parseInt(x , 2).toString(10).toUpperCase();
+  document.getElementById("demo").innerHTML = decOut;
+  }
+</script>
+
+
+
+</section>
+
+
+
+
+<h2>Binary Addition</h2>
+<img id="myImage" src="git_addition.jpg" style="width:300px"></p>
+
+ </p>
+
+
+<a href="classandobj.html">Next</a>
+
+<a href="project.html">Back to Projects</a>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+ </body>
+</html>
