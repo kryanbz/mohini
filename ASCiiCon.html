@@ -9,8 +9,8 @@
 			margin: 0;
 			padding: 0;
 			text-align: center;
-			font-family: Century Gothic;
-			background-image : url("backgroung.jpg");
+			font-family: sans-serif;
+			background-image : url("ascii.png");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -30,7 +30,7 @@
 		h2{
 			font-size: 30px;
 			font-weight: 600;
-			color : blue;
+			color : red;
 		}
 		.text{
 			text-align: left;
@@ -59,11 +59,11 @@
 				font-weight: bolder;
 			}
 			#btn{
-				font-family: Century Gothic;
+				font-family: inherit;
 				margin-top: 10px;
 				border: none;
 				color: #fff;
-				background-color: black;
+				background-color: navy;
 				width: 150px;
 				padding: 10px;
 				border-radius: 30px;
@@ -98,8 +98,8 @@
 			<p class="text">Number:</p>
 			<input type="text" id="h">
 			<p id="result"></p>
-			<button id="btn" onClick="DecToAscii()">Enter</button>
-			<p id="info">Enter any number from 0 - 127 to convert.</p>
+			<button id="btn" onClick="DecToAscii()">Submit</button>
+			<p id="info">Please enter any number from 0 - 127 to convert to ASCII</p>
 		</div>
 	</body>
 </html>

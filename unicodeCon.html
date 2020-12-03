@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<title>Binary to Hexadecimal Converter</title>
+		<title>Unicode Converter</title>
 	</head>
 	<style media="screen">
 		body{
@@ -30,7 +30,7 @@
 		h2{
 			font-size: 30px;
 			font-weight: 600;
-			color : red;
+			color : black;
 		}
 		.text{
 			text-align: left;
@@ -81,24 +81,47 @@
 			}
 	</style>
 	<script type="text/javascript">
-		function BintoHex() {
+		function UniCon() {
 			var h=document.getElementById('h').value;
-			var result= parseInt(h , 2).toString(16).toUpperCase();
-			document.getElementById("result").innerHTML= result;			
+			text = h;
+			unicode = ("&#x" + h)
+			document.getElementById("result").innerHTML= unicode;			
 		}
 		
 
 		
 
 	</script>
+	
+
+
 	<body>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a <a href="#home" class="w3-bar-item w3-button w3-wide"><i class="fa fa-home"></i>HOME</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">PROJECTS</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CONCEPTS</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-file"></i> DOCUMENTATION</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-database"></i> DATABASE</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
 		<div>
-			<h2>Binary to Hexadecimal Converter</h2>
-			<p> <img src = "bintohex.jpg" > </p>
-			<p class="text">Enter any 4-digit binary number:</p>
+			<p> <img src = "unicode-logo.png" style="height : 200px"> </p>
+			<h2>Converter</h2>
+			<p class="text">Enter any Unicode Number:</p>
 			<input type="text" id="h">
 			<p id="result"></p>
-			<button id="btn" onClick="BintoHex()">Submit</button>			
+			<button id="btn" onClick="UniCon()">Submit</button>
+            <p id="info">Please click <a href = "UnicodE.html" > here</a> for Unicode number examples:</p>			
 		</div>
 	</body>
 </html>
